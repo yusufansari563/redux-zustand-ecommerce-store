@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useStore } from '../store';
+import { useStore } from '../../store';
 
 export default function CartProduct(props) {
   const [addToCart, getCart, addSameProdInCart, removeSameProdInCart] =

@@ -1,5 +1,5 @@
 import create from 'zustand';
-import { ProductGet } from '../services/ProductService';
+import { ProductGet } from '../Domain/UseCases/ProductService';
 
 export const useStore = create((set) => ({
   bears: 0,

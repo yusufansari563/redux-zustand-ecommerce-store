@@ -4,7 +4,7 @@ import Price from '../../components/Price';
 import { useStore } from '../../../store';
 
 function Cart() {
-  const getTotalPrice = useStore((state) => state.totalPrice);
+  const getTotalPrice = useStore(state => state.totalPrice);
   const getCart = useStore((state) => state.cart);
   return (
     <div>
