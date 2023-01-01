@@ -1,7 +1,7 @@
 import React from 'react';
 import CartProduct from '../../components/CartProduct';
 import Price from '../../components/Price';
-import { useStore } from '../../../store';
+import { useStore } from '../../../Service';
 
 function Cart() {
   const getTotalPrice = useStore(state => state.totalPrice);

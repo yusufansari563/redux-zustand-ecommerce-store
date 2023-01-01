@@ -1,6 +1,6 @@
 import React from 'react'
 import Cart from '../scene/product/Cart'
-import { useStore } from '../../store'
+import { useStore } from '../../Service'
 
 function Price() {
   const getCart = useStore(state=>state.cart);

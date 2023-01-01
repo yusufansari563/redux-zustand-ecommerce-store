@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import { useStore } from '../store';
+import { useStore } from '../../Service';
 
 export default function ProductComponent(props) {
-  const addToCart = useStore((state) => state.addToCart);
-  const deleteFromCart = useStore((state) => state.deleteFromCart);
-  const getCart = useStore((state) => state.cart);
+  const addToCart = useStore((state:any) => state.addToCart);
+  const deleteFromCart = useStore((state:any) => state.deleteFromCart);
+  const getCart = useStore((state:any) => state.cart);
 
   const AddToCart = (item) => {
     addToCart(item);
@@ -15,10 +15,10 @@ export default function ProductComponent(props) {
   };
 
   const productExistCheck = () => {
-    const check = getCart.filter(item=>{
-      return item?.id === props?.id 
+    const check = getCart.filter((item) => {
+      return item?.id === props?.id;
     });
-    return check.length > 0
+    return check.length > 0;
   };
 
   return (
